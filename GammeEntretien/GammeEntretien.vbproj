@@ -116,6 +116,7 @@
     <Content Include="Interventions\TechniciensAjoutActionsSousStations.aspx" />
     <Content Include="Interventions\TechnicienSousStationProgrammerAction.aspx" />
     <Content Include="Interventions\Test.aspx" />
+    <Content Include="README.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
