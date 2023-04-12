@@ -1,0 +1,90 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="GammeEntretien.master.vb" Inherits="GammeEntretien.GammeEntretien" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Gammes d'entretien</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <meta name="robots" content="noindex" /> 
+    <link href="Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="Content/Site.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .nav
+        {
+            width:100%;
+            padding-left:15px;
+        }
+    </style> 
+</head>
+<body>
+<form id="form1" runat="server" defaultbutton="BtSubmit">
+   <div class="row">
+        <div class="col-sm-1">
+        </div> 
+        <div class="col-sm-11">          
+               <div class="row header">
+                    <div class="col-sm-3 droite">
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Content/images/gammes.png" Height="40px" Width="82px"/>
+                    </div> 
+                    <div class="col-sm-6 centrer h3 text-info">          
+                       Gestion des gammes d'entretien               
+                    </div>          
+                    <div class="col-sm-2 bordurefine">
+                         <asp:Panel ID="PnLogin" runat="server">
+                            <asp:Label ID="LbPersonneConnectee" runat="server" Font-Bold="False" Font-Size="Small" Font-Underline="False"></asp:Label>
+                            <asp:Label ID="Labellogin" runat="server" Text="" ></asp:Label>
+                        </asp:Panel>
+                    </div>
+               </div>
+
+                <div class="row">
+                    <div class="col-sm-12 centrer h4 text-primary">
+                        <asp:Menu ID="MenuDossier" runat="server" DataSourceID="MapMenu" 
+                            EnableViewState="false" 
+                            IncludeStyleBlock="false" 
+                            Orientation="Horizontal"
+                            CssClass="navbar navbar-fixed-top"
+                            StaticMenuStyle-CssClass= "nav"
+                            StaticSelectedStyle-CssClass="active"
+                            DynamicMenuStyle-CssClass="dropdown-menu">
+                            <DataBindings>
+                                <asp:MenuItemBinding DataMember="SiteMapNode" NavigateUrlField="Url" TextField="Description" ValueField="Title" />
+                            </DataBindings>
+                        </asp:Menu>
+                    </div>
+                </div>
+
+                   <div class="row">
+                       <div class="col-sm-12 text-info h3 text-center">
+                           <asp:ContentPlaceHolder ID="Titre" runat="server"></asp:ContentPlaceHolder>
+                       </div>
+                   </div>
+                    <div>
+                        <asp:ContentPlaceHolder ID="Main" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+
+            <div class="bas">           
+                 <div class="col-xs-5"><asp:Image ID="Image3" runat="server"  ImageUrl="~/App_Themes/cdg/Images/foxy.png" Height="25px" Width="31px" />
+                     Application gamme d'entretien
+                 </div>
+                 <div class="col-xs-7">
+                     Projet en cours de développement / Alban boytard / 08 2019
+                     <asp:Button ID="BtSubmit" runat="server" Text="" OnClick="BtSubmit_Click" Width="16px" />
+                     <asp:SiteMapDataSource ID="MapMenu" runat ="server" ShowStartingNode="true" SiteMapProvider="XmlSiteMapProvider" />
+                </div>
+            </div>
+
+        </div>          
+   </div>
+
+    </form>
+</body>
+</html>

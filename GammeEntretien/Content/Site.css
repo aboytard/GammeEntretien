@@ -1,0 +1,29 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+.titre {
+    text-align: center;
+    font-size: 20px;
+    color: #009900;
+    text-decoration: underline;
+}
+
+
+.header {
+    position: relative;
+    width: 795px;
+    height: 51px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aqua;
+}
+
+.CadreCouleur1 {
+    background-color: aquamarine;
+    
+}
+.CadreCouleur2 {
+    background-color: aqua;
+}
+.CadreCouleur3 {
+    background-color: burlywood;
+}
+

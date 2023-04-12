@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{328AA3A8-CDDB-4363-94B4-02A1C5F42FBC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GammeEntretien</RootNamespace>
+    <AssemblyName>GammeEntretien</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>GammeEntretien.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>GammeEntretien.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Action.aspx" />
+    <Content Include="Admin\Actions.aspx" />
+    <Content Include="Admin\ActionSousStationAffecte.aspx" />
+    <Content Include="Admin\Technicien.aspx" />
+    <Content Include="Admin\Index.aspx" />
+    <Content Include="Admin\ListeUtilisateurs.aspx" />
+    <Content Include="Admin\Referentiel.aspx" />
+    <Content Include="Admin\SousStation.aspx" />
+    <Content Include="Admin\SousStations.aspx" />
+    <Content Include="Admin\SousStationActionsPrevisionnelles.aspx" />
+    <Content Include="Admin\Techniciens.aspx" />
+    <Content Include="Admin\SousStationsListeTechniciensAffectes.aspx" />
+    <Content Include="Admin\TechnicienSousStationAttribuer.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Interventions\ActionSousStation.aspx" />
+    <Content Include="Interventions\ActionsSousStations.aspx" />
+    <Content Include="Interventions\Interventions.aspx" />
+    <Content Include="Interventions\Programmation.aspx" />
+    <Content Include="Interventions\TechniciensActionsSousStations.aspx" />
+    <Content Include="Interventions\TechniciensAjoutActionsSousStations.aspx" />
+    <Content Include="Interventions\TechnicienSousStationProgrammerAction.aspx" />
+    <Content Include="Interventions\Test.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Action.aspx.designer.vb">
+      <DependentUpon>Action.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Action.aspx.vb">
+      <DependentUpon>Action.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Actions.aspx.designer.vb">
+      <DependentUpon>Actions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Actions.aspx.vb">
+      <DependentUpon>Actions.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ActionSousStationAffecte.aspx.designer.vb">
+      <DependentUpon>ActionSousStationAffecte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ActionSousStationAffecte.aspx.vb">
+      <DependentUpon>ActionSousStationAffecte.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Technicien.aspx.designer.vb">
+      <DependentUpon>Technicien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Technicien.aspx.vb">
+      <DependentUpon>Technicien.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Index.aspx.designer.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Index.aspx.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ListeUtilisateurs.aspx.designer.vb">
+      <DependentUpon>ListeUtilisateurs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ListeUtilisateurs.aspx.vb">
+      <DependentUpon>ListeUtilisateurs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Referentiel.aspx.designer.vb">
+      <DependentUpon>Referentiel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Referentiel.aspx.vb">
+      <DependentUpon>Referentiel.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SousStation.aspx.designer.vb">
+      <DependentUpon>SousStation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SousStation.aspx.vb">
+      <DependentUpon>SousStation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SousStations.aspx.designer.vb">
+      <DependentUpon>SousStations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SousStations.aspx.vb">
+      <DependentUpon>SousStations.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SousStationActionsPrevisionnelles.aspx.designer.vb">
+      <DependentUpon>SousStationActionsPrevisionnelles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SousStationActionsPrevisionnelles.aspx.vb">
+      <DependentUpon>SousStationActionsPrevisionnelles.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Techniciens.aspx.designer.vb">
+      <DependentUpon>Techniciens.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Techniciens.aspx.vb">
+      <DependentUpon>Techniciens.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SousStationsListeTechniciensAffectes.aspx.designer.vb">
+      <DependentUpon>SousStationsListeTechniciensAffectes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SousStationsListeTechniciensAffectes.aspx.vb">
+      <DependentUpon>SousStationsListeTechniciensAffectes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TechnicienSousStationAttribuer.aspx.designer.vb">
+      <DependentUpon>TechnicienSousStationAttribuer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TechnicienSousStationAttribuer.aspx.vb">
+      <DependentUpon>TechnicienSousStationAttribuer.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\C_Action.vb" />
+    <Compile Include="App_Code\C_Prevoir.vb" />
+    <Compile Include="App_Code\C_Programmer.vb" />
+    <Compile Include="App_Code\C_SousStation.vb" />
+    <Compile Include="App_Code\C_Technicien.vb" />
+    <Compile Include="App_Code\DataProvider.vb" />
+    <Compile Include="App_Code\FonctionDiverses.vb" />
+    <Compile Include="GammeEntretien.Master.designer.vb">
+      <DependentUpon>GammeEntretien.Master</DependentUpon>
+    </Compile>
+    <Compile Include="GammeEntretien.Master.vb">
+      <DependentUpon>GammeEntretien.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interventions\ActionSousStation.aspx.designer.vb">
+      <DependentUpon>ActionSousStation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interventions\ActionSousStation.aspx.vb">
+      <DependentUpon>ActionSousStation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Interventions\ActionsSousStations.aspx.designer.vb">
+      <DependentUpon>ActionsSousStations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interventions\ActionsSousStations.aspx.vb">
+      <DependentUpon>ActionsSousStations.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Interventions\Interventions.aspx.designer.vb">
+      <DependentUpon>Interventions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interventions\Interventions.aspx.vb">
+      <DependentUpon>Interventions.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Interventions\Programmation.aspx.designer.vb">
+      <DependentUpon>Programmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interventions\Programmation.aspx.vb">
+      <DependentUpon>Programmation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Interventions\TechniciensActionsSousStations.aspx.designer.vb">
+      <DependentUpon>TechniciensActionsSousStations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interventions\TechniciensActionsSousStations.aspx.vb">
+      <DependentUpon>TechniciensActionsSousStations.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Interventions\TechniciensAjoutActionsSousStations.aspx.designer.vb">
+      <DependentUpon>TechniciensAjoutActionsSousStations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interventions\TechniciensAjoutActionsSousStations.aspx.vb">
+      <DependentUpon>TechniciensAjoutActionsSousStations.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Interventions\TechnicienSousStationProgrammerAction.aspx.designer.vb">
+      <DependentUpon>TechnicienSousStationProgrammerAction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interventions\TechnicienSousStationProgrammerAction.aspx.vb">
+      <DependentUpon>TechnicienSousStationProgrammerAction.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Interventions\Test.aspx.designer.vb">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interventions\Test.aspx.vb">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GammeEntretien.Master" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web1.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\images\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49305</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49305/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/home.aspx" title="Listes"  description="Listes">
+    <siteMapNode url="1.aspx" title="Referentiels" description="Gestion des réferentiels">
+      <siteMapNode url="~/Admin/SousStations.aspx" title="Sites"  description="Gestion des sites" ></siteMapNode>
+      <siteMapNode url="~/Admin/ListeUtilisateurs.aspx" title="Utilisateurs"  description="Utilisateurs" ></siteMapNode>
+      <siteMapNode url="~/Admin/Referentiel.aspx" title="Referentiel"  description="Referentiel" ></siteMapNode>
+      <siteMapNode url="~/Admin/Techniciens.aspx" title="Techniciens"  description="Gestion des techniciens" ></siteMapNode>
+      <siteMapNode url="~/Admin/Actions.aspx" title="Actions"  description="Gestion des actions" ></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="2.aspx" title="Programmation" description="Programmation des actions">
+      <siteMapNode url="~/Interventions/TechniciensActionsSousStations.aspx" title="Programmation"  description="Programmation des interventions" ></siteMapNode>
+      <siteMapNode url="~/Interventions/Interventions.aspx" title="interventions"  description="Listes des interventions" ></siteMapNode>
+      <siteMapNode url="~/Interventions/ActionsSousStations.aspx" title="Prevision"  description="Prevision des interventions" ></siteMapNode>
+    </siteMapNode> </siteMapNode>
+
+</siteMap>
